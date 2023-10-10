@@ -15,6 +15,7 @@
 		F541ED492AD5BD62001AF539 /* Reports.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED482AD5BD62001AF539 /* Reports.swift */; };
 		F541ED4B2AD5BDAA001AF539 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED4A2AD5BDAA001AF539 /* Add.swift */; };
 		F541ED4D2AD5BDBC001AF539 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED4C2AD5BDBC001AF539 /* Settings.swift */; };
+		F541ED4F2AD5C021001AF539 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED4E2AD5C021001AF539 /* Categories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F541ED482AD5BD62001AF539 /* Reports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reports.swift; sourceTree = "<group>"; };
 		F541ED4A2AD5BDAA001AF539 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
 		F541ED4C2AD5BDBC001AF539 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F541ED4E2AD5C021001AF539 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				F541ED482AD5BD62001AF539 /* Reports.swift */,
 				F541ED4A2AD5BDAA001AF539 /* Add.swift */,
 				F541ED4C2AD5BDBC001AF539 /* Settings.swift */,
+				F541ED4E2AD5C021001AF539 /* Categories.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F541ED4D2AD5BDBC001AF539 /* Settings.swift in Sources */,
+				F541ED4F2AD5C021001AF539 /* Categories.swift in Sources */,
 				F541ED472AD5BCC5001AF539 /* Expenses.swift in Sources */,
 				F541ED392AD5B9D7001AF539 /* ContentView.swift in Sources */,
 				F541ED372AD5B9D7001AF539 /* TrackingExpensesApp.swift in Sources */,
