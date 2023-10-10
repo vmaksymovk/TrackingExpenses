@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEF083FBD42941E6ABF011B0 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 43D5CC3CF3164215AEEDBFA1 /* Sentry */; };
 		F541ED372AD5B9D7001AF539 /* TrackingExpensesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED362AD5B9D7001AF539 /* TrackingExpensesApp.swift */; };
 		F541ED392AD5B9D7001AF539 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED382AD5B9D7001AF539 /* ContentView.swift */; };
 		F541ED3B2AD5B9D9001AF539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F541ED3A2AD5B9D9001AF539 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEF083FBD42941E6ABF011B0 /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +63,7 @@
 		F541ED352AD5B9D7001AF539 /* TrackingExpenses */ = {
 			isa = PBXGroup;
 			children = (
+				F541ED452AD5BBAB001AF539 /* Screens */,
 				F541ED442AD5BB80001AF539 /* Components */,
 				F541ED362AD5B9D7001AF539 /* TrackingExpensesApp.swift */,
 				F541ED382AD5B9D7001AF539 /* ContentView.swift */,
@@ -81,7 +84,6 @@
 		F541ED442AD5BB80001AF539 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				F541ED452AD5BBAB001AF539 /* Screens */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -108,12 +110,16 @@
 				F541ED2F2AD5B9D7001AF539 /* Sources */,
 				F541ED302AD5B9D7001AF539 /* Frameworks */,
 				F541ED312AD5B9D7001AF539 /* Resources */,
+				811D6D44F1BD4216A424CD67 /* Upload Debug Symbols to Sentry */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TrackingExpenses;
+			packageProductDependencies = (
+				43D5CC3CF3164215AEEDBFA1 /* Sentry */,
+			);
 			productName = TrackingExpenses;
 			productReference = F541ED332AD5B9D7001AF539 /* TrackingExpenses.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +148,9 @@
 				Base,
 			);
 			mainGroup = F541ED2A2AD5B9D7001AF539;
+			packageReferences = (
+				F2B9C75CE32D40CE9670EF6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+			);
 			productRefGroup = F541ED342AD5B9D7001AF539 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,6 +171,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		811D6D44F1BD4216A424CD67 /* Upload Debug Symbols to Sentry */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			name = "Upload Debug Symbols to Sentry";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/newOutputFile.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script is responsable to upload debug symbols and source context for Sentry.\nif which sentry-cli >/dev/null; then\nexport SENTRY_ORG=vladyslav-f7\nexport SENTRY_PROJECT=apple-ios\nERROR=$(sentry-cli debug-files upload --include-sources \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F541ED2F2AD5B9D7001AF539 /* Sources */ = {
@@ -302,6 +333,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"TrackingExpenses/Preview Content\"";
 				DEVELOPMENT_TEAM = YDM4QC6KDH;
 				ENABLE_PREVIEWS = YES;
@@ -311,6 +343,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,6 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"TrackingExpenses/Preview Content\"";
 				DEVELOPMENT_TEAM = YDM4QC6KDH;
 				ENABLE_PREVIEWS = YES;
@@ -340,6 +374,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F2B9C75CE32D40CE9670EF6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43D5CC3CF3164215AEEDBFA1 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2B9C75CE32D40CE9670EF6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F541ED2B2AD5B9D7001AF539 /* Project object */;
 }
