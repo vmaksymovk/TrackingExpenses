@@ -38,7 +38,7 @@ To get started with **Tracking Expenses**, follow these steps:
 1. **Clone the Repository:** Clone this repository to your local machine using Git.
 
     ```shell
-    [git clone https://github.com/yourusername/tracking-expenses.git](https://github.com/vmaksymovk/TrackingExpenses.git)
+    git clone https://github.com/yourusername/tracking-expenses.git
     ```
 
 2. **Open the App:** Open the app in your preferred Swift development environment, such as Xcode.
