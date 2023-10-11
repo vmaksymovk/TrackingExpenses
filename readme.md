@@ -54,12 +54,6 @@ Include screenshots of your app to give users a visual preview of its interface.
 ![Screenshot 1](screenshots/screenshot1.png)
 ![Screenshot 2](screenshots/screenshot2.png)
 
-## Contributing
-
-We welcome contributions from the community. If you'd like to contribute to the project, please follow our [Contribution Guidelines](CONTRIBUTING.md).
-
-## License
-
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
@@ -68,16 +62,10 @@ We would like to thank the open-source community for its contributions to our pr
 
 ## Contact
 
-If you have any questions or need support, please contact us at trackingexpenses@example.com.
+If you have any questions or need support, please contact us at vmaksymovk@gmail.com
 
 ---
 
-Enjoy managing your finances with **Tracking Expenses**! We hope this app helps you better understand your spending habits and make informed financial decisions.
+Enjoy managing your finances with **Tracking Expenses**! I hope this app helps you better understand your spending habits and make informed financial decisions.
 
-[Download Now](https://link-to-your-app-download-page)
 
-[Visit our Website](https://www.your-app-website.com)
-
-[Report an Issue](https://github.com/yourusername/tracking-expenses/issues)
-
-[Contribute to the Project](https://github.com/yourusername/tracking-expenses/blob/main/CONTRIBUTING.md)
