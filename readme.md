@@ -1,6 +1,6 @@
 Tracking Expenses
 
-Tracking Expenses Logo ![sticker](https://github.com/vmaksymovk/TrackingExpenses/assets/111226865/92cc0ce0-6dff-4de4-81dc-e8400552ec3b)
+![sticker](https://github.com/vmaksymovk/TrackingExpenses/assets/111226865/92cc0ce0-6dff-4de4-81dc-e8400552ec3b)
 
 
 Tracking Expenses is a simple and user-friendly finance management application that helps you keep track of your expenses and analyze your spending habits. With this app, you can efficiently manage your financial transactions, categorize expenses, and view detailed statistics based on years, months, and weeks.
