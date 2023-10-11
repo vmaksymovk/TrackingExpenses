@@ -48,7 +48,12 @@ struct ExpensesList: View {
                                     Text("USD \(expense.amount.roundTo(2))")
                                 }
                                 HStack {
-                                    Tag(label: expense.category!.name, color: expense.category!.color)
+                                    if let category = expense.category {
+                                        Tag(label: category.name, color: category.color)
+                                    } else {
+                                        // Обработка ситуации, когда expense.category равен nil
+                                        Text("Unknown Category")
+                                    }
                                     
                                     if expense.recurrence != nil && expense.recurrence != Recurrence.none {
                                         Image(systemName: "repeat")

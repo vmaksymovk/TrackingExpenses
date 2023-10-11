@@ -4,7 +4,7 @@ import RealmSwift
 import AVKit
 
 struct Add: View {
-    @EnvironmentObject var realmManager: RealmManager
+    @EnvironmentObject private var realmManager: RealmManager
     
     @State private var selectedCategory: Category = Category(name: "Create a category first", color: Color.clear)
 
@@ -137,5 +137,6 @@ struct Add: View {
 struct Add_Previews: PreviewProvider {
     static var previews: some View {
         Add()
+            .environmentObject(RealmManager())
     }
 }

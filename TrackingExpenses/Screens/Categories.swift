@@ -3,7 +3,7 @@ import SwiftUI
 import RealmSwift
 
 struct Categories: View {
-    @EnvironmentObject var realmManager: RealmManager
+    @EnvironmentObject private var realmManager: RealmManager
     
     @State private var invalidDataAlertShowing = false
     @State private var newCategoryName: String = ""
@@ -106,5 +106,6 @@ struct Categories: View {
 struct Categories_Previews: PreviewProvider {
     static var previews: some View {
         Categories()
-    }
+                    .environmentObject(RealmManager())
+            }
 }
