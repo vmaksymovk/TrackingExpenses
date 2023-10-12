@@ -32,7 +32,7 @@ struct MonthChart: View {
                 .foregroundStyle(.gray)
                 .lineStyle(StrokeStyle(lineWidth: 1, dash: [5]))
         }
-        .foregroundColor(.white)
+        .foregroundColor(Color.blue)
         .chartXAxis {
             AxisMarks(values: .automatic) { value in
                 if let stringValue = value.as(String.self) {

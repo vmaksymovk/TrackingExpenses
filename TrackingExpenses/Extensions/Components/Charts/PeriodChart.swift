@@ -94,5 +94,6 @@ struct PeriodChart: View {
 struct PeriodChart_Previews: PreviewProvider {
     static var previews: some View {
         PeriodChart()
+            .environmentObject(RealmManager())
     }
 }
