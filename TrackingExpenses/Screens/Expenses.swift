@@ -73,5 +73,6 @@ struct Expenses: View {
 struct Expenses_Previews: PreviewProvider {
     static var previews: some View {
         Expenses(expenses: RealmManager().expenses)
+            .environmentObject(RealmManager())
     }
 }
