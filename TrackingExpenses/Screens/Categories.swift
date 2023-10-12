@@ -106,6 +106,6 @@ struct Categories: View {
 struct Categories_Previews: PreviewProvider {
     static var previews: some View {
         Categories()
-                    .environmentObject(RealmManager())
+            .environmentObject(RealmManager())
             }
 }

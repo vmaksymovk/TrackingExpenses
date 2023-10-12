@@ -111,6 +111,7 @@
 		F541ED352AD5B9D7001AF539 /* TrackingExpenses */ = {
 			isa = PBXGroup;
 			children = (
+				F555AE5B2AD886B200495A63 /* Onboarding */,
 				F541ED7C2AD5F971001AF539 /* Utilities */,
 				F541ED572AD5F081001AF539 /* Extensions */,
 				F541ED662AD5F261001AF539 /* Models */,
@@ -197,6 +198,13 @@
 				F541ED912AD5FBC6001AF539 /* KeyboardUtils.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F555AE5B2AD886B200495A63 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
