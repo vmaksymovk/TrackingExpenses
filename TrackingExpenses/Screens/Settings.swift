@@ -4,41 +4,51 @@ import RealmSwift
 
 struct Settings: View {
     @State private var showEraseConfirmation = false
+    @State private var chooseLanguage : Language = .English
     var body: some View {
         
+        NavigationView {
             
-            NavigationView {
-                List {
-                    NavigationLink {
-                        Categories()
-                    } label: {
-                        HStack {
-                            Text("Categories")
-                        }
-                    }
-                    
-                    Button(role: .destructive) {
-                        showEraseConfirmation = true
-                    } label: {
-                        Text("Erase Data")
-                    }
-                    .alert(isPresented: $showEraseConfirmation) {
-                        Alert(
-                            title: Text("Are you sure?"),
-                            message: Text("This action cannot be undone."),
-                            primaryButton: .destructive(Text("Erase data")) {
-                                let realm = try! Realm()
-                                realm.beginWrite()
-                                realm.deleteAll()
-                                try! realm.commitWrite()
-                            },
-                            secondaryButton: .cancel()
-                        )
+            List {
+                
+                Picker("Language:", selection: $chooseLanguage) {
+                    ForEach(Language.allCases) { value in
+                        Text(value.rawValue).tag(value)
                     }
                 }
-                .navigationTitle("Settings")
-                .padding(.top, 16)
+                
+                NavigationLink {
+                    Categories()
+                } label: {
+                    HStack {
+                        Text("Categories")
+                    }
+                }
+                
+                
+                
+                Button(role: .destructive) {
+                    showEraseConfirmation = true
+                } label: {
+                    Text("Erase Data")
+                }
+                .alert(isPresented: $showEraseConfirmation) {
+                    Alert(
+                        title: Text("Are you sure?"),
+                        message: Text("This action cannot be undone."),
+                        primaryButton: .destructive(Text("Erase data")) {
+                            let realm = try! Realm()
+                            realm.beginWrite()
+                            realm.deleteAll()
+                            try! realm.commitWrite()
+                        },
+                        secondaryButton: .cancel()
+                    )
+                }
             }
+            .navigationTitle("Settings")
+            .padding(.top, 16)
+        }
         
     }
 }

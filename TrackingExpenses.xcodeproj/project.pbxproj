@@ -41,6 +41,7 @@
 		F541ED8E2AD5FB74001AF539 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED8D2AD5FB74001AF539 /* DateUtils.swift */; };
 		F541ED902AD5FB96001AF539 /* ExpensesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED8F2AD5FB96001AF539 /* ExpensesUtils.swift */; };
 		F541ED922AD5FBC6001AF539 /* KeyboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED912AD5FBC6001AF539 /* KeyboardUtils.swift */; };
+		F555AEAA2AE71C1900495A63 /* LanguageOfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F555AEA92AE71C1800495A63 /* LanguageOfApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		F541ED8D2AD5FB74001AF539 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		F541ED8F2AD5FB96001AF539 /* ExpensesUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesUtils.swift; sourceTree = "<group>"; };
 		F541ED912AD5FBC6001AF539 /* KeyboardUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardUtils.swift; sourceTree = "<group>"; };
+		F555AEA92AE71C1800495A63 /* LanguageOfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageOfApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		F541ED572AD5F081001AF539 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F555AEA92AE71C1800495A63 /* LanguageOfApp.swift */,
 				F541ED582AD5F0A4001AF539 /* Double.swift */,
 				F541ED442AD5BB80001AF539 /* Components */,
 			);
@@ -319,6 +322,7 @@
 				F541ED8C2AD5FB40001AF539 /* Color.swift in Sources */,
 				F541ED4D2AD5BDBC001AF539 /* Settings.swift in Sources */,
 				F541ED882AD5FB00001AF539 /* Tag.swift in Sources */,
+				F555AEAA2AE71C1900495A63 /* LanguageOfApp.swift in Sources */,
 				F541ED712AD5F5FF001AF539 /* RealmManager.swift in Sources */,
 				F541ED4F2AD5C021001AF539 /* Categories.swift in Sources */,
 				F541ED592AD5F0A4001AF539 /* Double.swift in Sources */,
