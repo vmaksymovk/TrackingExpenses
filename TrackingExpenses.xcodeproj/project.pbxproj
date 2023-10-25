@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AEF083FBD42941E6ABF011B0 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 43D5CC3CF3164215AEEDBFA1 /* Sentry */; };
 		F535259D2AE92A5800CA194D /* AccountImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535259C2AE92A5800CA194D /* AccountImage.swift */; };
+		F53525A52AE962BD00CA194D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53525A42AE962BD00CA194D /* ImagePicker.swift */; };
 		F541ED372AD5B9D7001AF539 /* TrackingExpensesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED362AD5B9D7001AF539 /* TrackingExpensesApp.swift */; };
 		F541ED392AD5B9D7001AF539 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED382AD5B9D7001AF539 /* ContentView.swift */; };
 		F541ED3B2AD5B9D9001AF539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F541ED3A2AD5B9D9001AF539 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		F535259C2AE92A5800CA194D /* AccountImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImage.swift; sourceTree = "<group>"; };
+		F53525A42AE962BD00CA194D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F541ED332AD5B9D7001AF539 /* TrackingExpenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackingExpenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F541ED362AD5B9D7001AF539 /* TrackingExpensesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingExpensesApp.swift; sourceTree = "<group>"; };
 		F541ED382AD5B9D7001AF539 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				F541ED872AD5FB00001AF539 /* Tag.swift */,
 				F541ED892AD5FB16001AF539 /* PeriodOverview.swift */,
 				F535259C2AE92A5800CA194D /* AccountImage.swift */,
+				F53525A42AE962BD00CA194D /* ImagePicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				F541ED5E2AD5F154001AF539 /* PeriodChart.swift in Sources */,
 				F541ED902AD5FB96001AF539 /* ExpensesUtils.swift in Sources */,
 				F541ED392AD5B9D7001AF539 /* ContentView.swift in Sources */,
+				F53525A52AE962BD00CA194D /* ImagePicker.swift in Sources */,
 				F535259D2AE92A5800CA194D /* AccountImage.swift in Sources */,
 				F541ED822AD5FAAB001AF539 /* MonthChart.swift in Sources */,
 				F541ED372AD5B9D7001AF539 /* TrackingExpensesApp.swift in Sources */,
