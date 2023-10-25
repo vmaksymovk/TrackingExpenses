@@ -9,6 +9,7 @@ struct Categories: View {
     @State private var newCategoryName: String = ""
     @State private var newCategoryColor = Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
     
+    
     func handleSubmit() {
         if newCategoryName.count > 0 {
             self.realmManager.submitCategory(Category(
