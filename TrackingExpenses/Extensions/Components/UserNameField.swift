@@ -21,7 +21,7 @@ struct UserNameField: View {
                     saveUserName()
                 }
                 .padding()
-                .background(Color.white)
+                .background(Color(UIColor.systemBackground)) // the same textField color as divice's interface
                 .cornerRadius(8)
 
             Button(action: {
