@@ -4,13 +4,18 @@ import RealmSwift
 struct Settings: View {
     @State private var showEraseConfirmation = false
     @State private var chooseLanguage : Language = .English
+    
+    
+    
     var body: some View {
         
         NavigationView {
             
             
             VStack {
+                
                 AccountImage() // View with account's image
+                UserNameField()
                 List {
                     
                     Picker("Language:", selection: $chooseLanguage) {

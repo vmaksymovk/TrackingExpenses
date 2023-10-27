@@ -33,7 +33,7 @@ struct ImagePicker: UIViewControllerRepresentable { // create a struct
             picker.dismiss(animated: true)
         }
         
-        // In case User will close controller, this method deselect/dismiss user's choose.
+        // In case User will close controller
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
             picker.dismiss(animated: true)
         }

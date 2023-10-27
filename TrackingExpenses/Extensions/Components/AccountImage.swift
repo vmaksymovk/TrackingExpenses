@@ -3,8 +3,10 @@ import RealmSwift
 
 
 struct AccountImage: View {
-    @State private var isImagePickerPresented = false // is libary with images appear
+    @State private var isImagePickerPresented = false // does libary with images appear
     @State private var selectedImage: Image? // Choose image
+    
+    
     
     var body: some View {
         VStack {
