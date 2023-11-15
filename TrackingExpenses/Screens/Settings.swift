@@ -7,6 +7,7 @@ struct Settings: View {
     
     
     
+    
     var body: some View {
         
         NavigationView {
@@ -17,6 +18,7 @@ struct Settings: View {
                 AccountImage() // View with account's image
                 UserNameField()
                 List {
+                    
                     
                     Picker("Language:", selection: $chooseLanguage) {
                         ForEach(Language.allCases) { value in
