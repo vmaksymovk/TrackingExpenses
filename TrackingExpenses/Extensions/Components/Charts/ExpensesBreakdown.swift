@@ -12,13 +12,21 @@ struct ExpensesBreakdown: View {
                     x: .value("Amount", $0.amount)
                 )
                 .foregroundStyle(by: .value("Category", $0.category?.name ?? ""))
+                
             }
-            .frame(height: 30)
+            .chartPlotStyle { content in
+                content.frame(width: 400, height: 15)
+                
+            }
+            
+//            .frame(height: 30)
             .chartXAxis(.hidden)
-            .frame(height: 48)
+//            .frame(height: 48)
             .padding(.horizontal, 16)
+            
         }
         .environment(\.layoutDirection, .leftToRight)
+        
     }
 }
 
