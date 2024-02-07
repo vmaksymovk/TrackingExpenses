@@ -4,10 +4,11 @@ import RealmSwift
 import AVKit
 
 struct Add: View {
+    @State private var showAlert = false
     @EnvironmentObject private var realmManager: RealmManager
     
     @State private var selectedCategory: Category = Category(name: "Create a category first", color: Color.clear)
-
+    
     @State private var amount = ""
     @State private var recurrence = Recurrence.none
     @State private var date = Date()
@@ -26,19 +27,29 @@ struct Add: View {
     }
     
     func handleCreate() {
+        guard let amount = Double(self.amount),
+              !self.selectedCategory.name.isEmpty
+        else {
+            // Show the alert by setting showAlert to true
+            showAlert = true
+            return
+        }
+        
         self.realmManager.submitExpense(Expense(
-            amount: Double(self.amount)!, // an error to fix
+            amount: amount,
             category: self.selectedCategory,
             date: self.date,
-            note: self.note.count == 0 ? self.selectedCategory.name : self.note,
+            note: self.note,
             recurrence: self.recurrence
         ))
+        
         self.amount = ""
         self.recurrence = Recurrence.none
         self.date = Date()
         self.note = ""
         hideKeyboard()
     }
+    
     
     var body: some View {
         NavigationView {
@@ -105,13 +116,16 @@ struct Add: View {
                     handleCreate()
                 } label: {
                     Label("Submit expense", systemImage: "paperplane")
-//                        .labelStyle(.titleOnly)
+                    //                        .labelStyle(.titleOnly)
                         .padding(.horizontal, 44)
                         .padding(.vertical, 12)
                 }
                 .foregroundColor(.white)
                 .background(.blue)
                 .cornerRadius(10)
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("Incomplete Fields"), message: Text("Please fill in all fields."), dismissButton: .default(Text("OK")))
+                }
                 
                 Spacer()
             }
