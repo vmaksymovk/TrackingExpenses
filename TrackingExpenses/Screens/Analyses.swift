@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct Reports: View {
+struct Analyses: View {
     @EnvironmentObject var realmManager: RealmManager
     @State private var period: Period = Period.week
     @State private var tabViewSelection = 0
@@ -37,7 +37,7 @@ struct Reports: View {
                 .id(pagesRange)
             }
             .padding(.top, 16)
-            .navigationTitle("Reports")
+            .navigationTitle("Analyses")
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Menu {
@@ -61,7 +61,7 @@ struct Reports: View {
 
 struct Reports_Previews: PreviewProvider {
     static var previews: some View {
-        Reports()
+        Analyses()
             .environmentObject(RealmManager())
     }
 }
