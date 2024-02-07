@@ -27,7 +27,7 @@ struct Add: View {
     
     func handleCreate() {
         self.realmManager.submitExpense(Expense(
-            amount: Double(self.amount)!,
+            amount: Double(self.amount)!, // an error to fix
             category: self.selectedCategory,
             date: self.date,
             note: self.note.count == 0 ? self.selectedCategory.name : self.note,
@@ -104,8 +104,8 @@ struct Add: View {
                 Button {
                     handleCreate()
                 } label: {
-                    Label("Submit expense", systemImage: "plus")
-                        .labelStyle(.titleOnly)
+                    Label("Submit expense", systemImage: "paperplane")
+//                        .labelStyle(.titleOnly)
                         .padding(.horizontal, 44)
                         .padding(.vertical, 12)
                 }
@@ -126,7 +126,7 @@ struct Add: View {
                 }
             }
             .padding(.top, 16)
-            .navigationTitle("Add")
+            .navigationTitle("Input an expense")
         }
         .onAppear {
             onAppear()

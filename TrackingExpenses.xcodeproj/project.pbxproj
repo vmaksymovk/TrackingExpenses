@@ -16,7 +16,7 @@
 		F541ED3B2AD5B9D9001AF539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F541ED3A2AD5B9D9001AF539 /* Assets.xcassets */; };
 		F541ED3E2AD5B9D9001AF539 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F541ED3D2AD5B9D9001AF539 /* Preview Assets.xcassets */; };
 		F541ED472AD5BCC5001AF539 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED462AD5BCC5001AF539 /* Expenses.swift */; };
-		F541ED492AD5BD62001AF539 /* Reports.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED482AD5BD62001AF539 /* Reports.swift */; };
+		F541ED492AD5BD62001AF539 /* Analyses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED482AD5BD62001AF539 /* Analyses.swift */; };
 		F541ED4B2AD5BDAA001AF539 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED4A2AD5BDAA001AF539 /* Add.swift */; };
 		F541ED4D2AD5BDBC001AF539 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED4C2AD5BDBC001AF539 /* Settings.swift */; };
 		F541ED4F2AD5C021001AF539 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F541ED4E2AD5C021001AF539 /* Categories.swift */; };
@@ -57,7 +57,7 @@
 		F541ED3A2AD5B9D9001AF539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F541ED3D2AD5B9D9001AF539 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F541ED462AD5BCC5001AF539 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
-		F541ED482AD5BD62001AF539 /* Reports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reports.swift; sourceTree = "<group>"; };
+		F541ED482AD5BD62001AF539 /* Analyses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analyses.swift; sourceTree = "<group>"; };
 		F541ED4A2AD5BDAA001AF539 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
 		F541ED4C2AD5BDBC001AF539 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F541ED4E2AD5C021001AF539 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				F541ED462AD5BCC5001AF539 /* Expenses.swift */,
-				F541ED482AD5BD62001AF539 /* Reports.swift */,
+				F541ED482AD5BD62001AF539 /* Analyses.swift */,
 				F541ED4A2AD5BDAA001AF539 /* Add.swift */,
 				F541ED4C2AD5BDBC001AF539 /* Settings.swift */,
 				F541ED4E2AD5C021001AF539 /* Categories.swift */,
@@ -361,7 +361,7 @@
 				F541ED7B2AD5F89D001AF539 /* YearChart.swift in Sources */,
 				F541ED922AD5FBC6001AF539 /* KeyboardUtils.swift in Sources */,
 				F541ED802AD5FA5D001AF539 /* WeekChart.swift in Sources */,
-				F541ED492AD5BD62001AF539 /* Reports.swift in Sources */,
+				F541ED492AD5BD62001AF539 /* Analyses.swift in Sources */,
 				F541ED732AD5F77F001AF539 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +498,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -528,6 +530,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (

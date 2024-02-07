@@ -39,13 +39,17 @@ struct Settings: View {
                     Button(role: .destructive) {
                         showEraseConfirmation = true
                     } label: {
-                        Text("Erase Data")
+                        HStack{
+                            Text("Remove Data")
+                            Label("Remove Data", systemImage: "trash")
+                                .labelStyle(.iconOnly)
+                        }
                     }
                     .foregroundColor(.red)
                     .alert(isPresented: $showEraseConfirmation) {
                         Alert(
-                            title: Text("Are you sure?"),
-                            message: Text("This action cannot be undone."),
+                            title: Text("Are you absolutely certain?"),
+                            message: Text("Warning: Proceeding will permanently delete this data"),
                             primaryButton: .destructive(Text("Erase data")) {
                                 let realm = try! Realm()
                                 realm.beginWrite()

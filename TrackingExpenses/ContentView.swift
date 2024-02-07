@@ -9,13 +9,13 @@ struct ContentView: View {
             Expenses(expenses: realmManager.expenses)
                 .environmentObject(realmManager)
                 .tabItem {
-                    Label("Expenses", systemImage: "tray.and.arrow.up.fill")
+                    Label("Expenses", systemImage: "list.bullet.clipboard")
                 }
             
-            Reports()
+            Analyses()
                 .environmentObject(realmManager)
                 .tabItem {
-                    Label("Reports", systemImage: "chart.bar.fill")
+                    Label("Analyses", systemImage: "chart.bar.fill")
                 }
             
             Add()
