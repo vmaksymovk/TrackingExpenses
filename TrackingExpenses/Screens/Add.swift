@@ -112,17 +112,10 @@ struct Add: View {
                 .scrollDisabled(true)
                 .frame(height: 275)
                 
-                Button {
+                Button("Submit expense", systemImage: "paperplane") {
                     handleCreate()
-                } label: {
-                    Label("Submit expense", systemImage: "paperplane")
-                    //                        .labelStyle(.titleOnly)
-                        .padding(.horizontal, 44)
-                        .padding(.vertical, 12)
                 }
-                .foregroundColor(.white)
-                .background(.blue)
-                .cornerRadius(10)
+                .buttonStyle(CustomButton())
                 .alert(isPresented: $showAlert) {
                     Alert(title: Text("Incomplete Fields"), message: Text("Please fill in all fields."), dismissButton: .default(Text("OK")))
                 }
