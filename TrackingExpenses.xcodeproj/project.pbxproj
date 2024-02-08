@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AEF083FBD42941E6ABF011B0 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 43D5CC3CF3164215AEEDBFA1 /* Sentry */; };
+		F527090A2B759278004CF286 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52709092B759278004CF286 /* CustomButton.swift */; };
 		F535259D2AE92A5800CA194D /* AccountImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535259C2AE92A5800CA194D /* AccountImage.swift */; };
 		F53525A52AE962BD00CA194D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53525A42AE962BD00CA194D /* ImagePicker.swift */; };
 		F53525AD2AEB1FBC00CA194D /* UserNameField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53525AC2AEB1FBC00CA194D /* UserNameField.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F52709092B759278004CF286 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F535259C2AE92A5800CA194D /* AccountImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImage.swift; sourceTree = "<group>"; };
 		F53525A42AE962BD00CA194D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F53525AC2AEB1FBC00CA194D /* UserNameField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameField.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				F541ED8D2AD5FB74001AF539 /* DateUtils.swift */,
 				F541ED8F2AD5FB96001AF539 /* ExpensesUtils.swift */,
 				F541ED912AD5FBC6001AF539 /* KeyboardUtils.swift */,
+				F52709092B759278004CF286 /* CustomButton.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				F541ED792AD5F7C4001AF539 /* Period.swift in Sources */,
 				F541ED5E2AD5F154001AF539 /* PeriodChart.swift in Sources */,
 				F541ED902AD5FB96001AF539 /* ExpensesUtils.swift in Sources */,
+				F527090A2B759278004CF286 /* CustomButton.swift in Sources */,
 				F541ED392AD5B9D7001AF539 /* ContentView.swift in Sources */,
 				F53525A52AE962BD00CA194D /* ImagePicker.swift in Sources */,
 				F535259D2AE92A5800CA194D /* AccountImage.swift in Sources */,
