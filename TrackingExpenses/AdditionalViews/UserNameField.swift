@@ -6,7 +6,7 @@ struct UserNameField: View {
     @State private var name: String
     @State private var savedName: String
     @FocusState private var isTextFieldFocused
-
+    @State private var isAnimated : Bool = false
     init() {
         let storedName = UserDefaults.standard.string(forKey: "userName")
         _name = State(initialValue: storedName ?? "")
@@ -15,24 +15,32 @@ struct UserNameField: View {
 
     var body: some View {
         HStack {
-            TextField("Enter your name", text: $name)
+            TextField(isAnimated ? "Edit your name" : "Enter your name", text: $name)
                 .focused($isTextFieldFocused)
                 .onSubmit {
                     saveUserName()
                 }
                 .padding()
-                .background(Color(UIColor.systemBackground)) // the same textField color as divice's interface
-                .cornerRadius(8)
+                /*.background(Color(UIColor.systemBackground))*/ // the same textField color as divice's interface
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(isAnimated ? .clear : .blue, lineWidth: 1)
+                )
+                
+                
 
             Button(action: {
+                isAnimated = true
                 saveUserName()
                 isTextFieldFocused = false // hide keyboard
+                
             }) {
-                Text("Save")
+                Text(isAnimated ? "Edit" : "Save")
                     .padding()
                     .background(Color.blue)
                     .foregroundColor(.white)
-                    .cornerRadius(8)
+                    .cornerRadius(10)
+                
             }
         }
         .onTapGesture {

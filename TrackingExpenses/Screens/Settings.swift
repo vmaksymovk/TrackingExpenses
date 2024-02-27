@@ -36,7 +36,7 @@ struct Settings: View {
                     
                     
                     
-                    Button(role: .destructive) {
+                    Button(role: .cancel) {
                         showEraseConfirmation = true
                     } label: {
                         HStack{
