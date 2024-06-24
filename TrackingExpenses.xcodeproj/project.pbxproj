@@ -122,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				F5D004E02B055C580028E6DD /* AdditionalViews */,
-				F555AE5B2AD886B200495A63 /* Onboarding */,
 				F541ED7C2AD5F971001AF539 /* Utilities */,
 				F541ED572AD5F081001AF539 /* Extensions */,
 				F541ED662AD5F261001AF539 /* Models */,
@@ -212,13 +211,6 @@
 				F52709092B759278004CF286 /* CustomButton.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		F555AE5B2AD886B200495A63 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		F5D004E02B055C580028E6DD /* AdditionalViews */ = {
@@ -504,6 +496,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -536,6 +529,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (

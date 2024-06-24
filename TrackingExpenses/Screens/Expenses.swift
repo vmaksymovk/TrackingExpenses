@@ -56,6 +56,7 @@ struct Expenses: View {
             )
             .navigationTitle("Expenses")
         }
+        
         .searchable(
             text: $searchQuery,
             placement: .automatic,

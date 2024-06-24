@@ -28,9 +28,9 @@ struct Add: View {
     
     func handleCreate() {
         guard let amount = Double(self.amount),
+              amount > 0,
               !self.selectedCategory.name.isEmpty
         else {
-            // Show the alert by setting showAlert to true
             showAlert = true
             return
         }

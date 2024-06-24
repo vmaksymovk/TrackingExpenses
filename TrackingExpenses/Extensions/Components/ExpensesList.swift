@@ -51,8 +51,8 @@ struct ExpensesList: View {
                                     if let category = expense.category {
                                         Tag(label: category.name, color: category.color)
                                     } else {
-                                        // Обработка ситуации, когда expense.category равен nil
-                                        Text("Unknown Category")
+                                        Tag(label: "Unknown Category", color: .red)
+                                        
                                     }
                                     
                                     if expense.recurrence != nil && expense.recurrence != Recurrence.none {
